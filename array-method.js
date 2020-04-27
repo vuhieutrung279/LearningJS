@@ -43,3 +43,12 @@ console.log(
     return "<" + item + ">"
   }).join("")
 );
+
+
+// array.sort
+// Sort by price from more expensive to less expensive
+console.log(
+  orders.sort(function(item1, item2){
+    return item2.unitPrice - item1.unitPrice;
+  })
+);
