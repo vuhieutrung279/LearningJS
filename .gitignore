@@ -1,1 +1,3 @@
 /node-build-in-modules/node_modules
+/promise/node_modules
+/async-sync/node_modules
