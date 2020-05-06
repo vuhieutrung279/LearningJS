@@ -18,7 +18,7 @@ var say = mouse.sayHi.bind(dog);
 say();
 
 
-function run(cb) {
+var run = (cb) => {
     console.log('run...');
     cb();
 }
