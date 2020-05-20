@@ -1,9 +1,9 @@
 // Variables
-var a = 5;
-var b = 10;
-var d;
-c = a + b;
-console.log(c, d);
+var a1 = 5;
+var b1 = 10;
+var d1;
+c1 = a1 + b1;
+console.log(c1, d1);
 
 // Data types
 //-BigInt
@@ -27,3 +27,22 @@ console.log(obj.name); // undefined
 //-- check exist property
 console.log('Augustine' in obj);
 
+
+// Array
+var arr = [];
+console.log(typeof arr);
+//-- array-like object
+var fruits = {
+    0: 'lemon',
+    1: 'avocado',
+    2: 'banana',
+    length: 3
+}
+console.log(fruits[2])
+
+
+
+// Operators
+var a = 5;
+var b = 10;
+console.log(a++ * b-- + --a * --b);// 5 * 10 + 5 * 8 = 90
