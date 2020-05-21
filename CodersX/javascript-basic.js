@@ -46,3 +46,28 @@ console.log(fruits[2])
 var a = 5;
 var b = 10;
 console.log(a++ * b-- + --a * --b);// 5 * 10 + 5 * 8 = 90
+
+// Function 
+//-- Variable shadowing
+var result = 0;
+function sum(a, b) {
+  var result; // thêm var vô
+  result = a + b;
+  return result;
+}
+console.log(sum(2, 3));
+console.log(result);
+
+
+function addProperty(obj, key, value) {
+    obj[key] = value;
+    return obj;
+  }
+  var obj = {};
+  var newObj = addProperty(obj, 'name', 'David');
+  console.log(obj, newObj);
+
+  function hi() {
+    console.log(arguments)
+  }
+  hi('Ming', 'Lan');
