@@ -71,3 +71,15 @@ function addProperty(obj, key, value) {
     console.log(arguments)
   }
   hi('Ming', 'Lan');
+
+
+  var rectangles = [
+    { width: 10, height: 5},
+    { width: 15, height: 50},
+    { width: 12, height: 51}
+  ]
+ 
+
+  console.log( rectangles.map(function(x) {
+    return x.width*x.height;
+  }))
