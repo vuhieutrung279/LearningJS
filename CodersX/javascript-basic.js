@@ -83,3 +83,52 @@ function addProperty(obj, key, value) {
   console.log( rectangles.map(function(x) {
     return x.width*x.height;
   }))
+
+  function Mouse(name) {
+    this.name = name;
+  }
+  
+  var tom = {
+    name: 'Tom',
+    stomach: [],
+    eat: function(mouse){
+      this.stomach.push(mouse);
+      return this;
+    }
+  }
+  
+  var m1 = new Mouse("m1");
+  var m2 = new Mouse("m2");
+  var m3 = new Mouse("m3");
+  
+  tom.eat(m1).eat(m2).eat(m3)
+  console.log(tom);
+
+
+  var student = {
+    name: "Trung",
+    sex: "Male",
+    age: 24
+}
+
+function showInfo(obj) {
+  return obj;
+}
+
+console.log(showInfo(student));
+
+
+
+
+function removeProp(prop) {
+  var student = {
+          name : "David Rayy",
+          class : "VI",
+          rollno : 12
+      }
+for (var item in student) {
+  if (item == prop) delete student[item];
+}
+return student;
+}
+console.log(removeProp("name"));
