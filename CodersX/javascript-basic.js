@@ -132,3 +132,5 @@ for (var item in student) {
 return student;
 }
 console.log(removeProp("name"));
+
+
